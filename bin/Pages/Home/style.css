@@ -1,0 +1,80 @@
+.Home__cabecalho{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--rosa1);
+    padding-bottom: 20px;
+    padding-top: 2.75rem;
+    row-gap: 1rem;
+    font-weight: 700;
+}
+
+.Home__precoperfil{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 0.4fr 1fr auto;
+    box-sizing: border-box;
+}
+
+.Home__perfil{
+    grid-column: 3;
+    grid-row: span 2;
+    background-color:#00000000;
+    border: none;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.Home__preco{
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.Home__ocultePreco{
+    color: #00000000;
+    border-radius: 10px;
+    background-color: #ffffff66;
+}
+
+.Home__ver_desver{
+    width: 20px;
+    background-color: #00000000;
+    background-image: url(../../Img/Desver.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    grid-row: 2;
+    grid-column: 2;
+    margin-left: 12px;
+}
+
+.Home__ativo{
+    background-image: url(../../Img/Ver.svg);
+}
+
+.Home__espaco{
+    padding: 16px 0;
+}
+
+.Home__cabecalho__lista{
+    display: flex;
+    overflow-y: scroll;
+    gap: 12px;
+    padding-right:16px ;
+    padding-left: 16px;
+}
+
+.Home__botao{
+    min-width: 112px;
+    min-height: 112px;
+    border: none;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #ffb5bf 100%);
+    border-radius: 20px;
+    background-color: #FFDEE9;
+
+}

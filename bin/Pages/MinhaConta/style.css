@@ -1,0 +1,15 @@
+.Perfil{
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+    font-weight: 800;
+    margin-top: 4rem;
+}
+
+.Perfil__imagem{
+    width: 107px;
+}
+
+.Perfil sub{
+    color: var(--text2);
+}

@@ -1,0 +1,23 @@
+.Splash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    row-gap: 1rem;
+    height: 90%;
+}
+.Splash__texto {
+    font-weight: 600;
+    color: var(--text3);
+}
+.Splash__container{
+    height: 100vh;
+    text-align: center
+}
+
+.Splash__creditos{
+    color: var(--text3);
+    opacity: 70%;
+    font-weight: 600;
+}

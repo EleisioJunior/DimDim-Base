@@ -1,0 +1,41 @@
+.login{
+    background-image: url(../../Img/Background-login.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+.login__top{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: white;
+    font-family: var(--Poppins);
+    font-weight: 700;
+    padding-top: 4rem;
+}
+
+.login__top img{
+    width: 56px;
+}
+
+.login__cartao{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: var(--rosa1);
+    position: absolute;
+    padding: 32px 0;
+    padding-bottom: 3rem;
+    bottom: 0;
+    row-gap: 1rem;
+    font-weight: 700;
+}
+.login__cartao h1{
+    width: 320px;
+}
+
+.login__cartao h6{
+    width: 320px;
+}

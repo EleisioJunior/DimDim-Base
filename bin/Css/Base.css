@@ -1,0 +1,14 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Urbanist:wght@400;500;600;700&display=swap');
+@import url(root.css);
+@import url(Componentes.css);
+@import url(../Pages/Splash/style.css);
+@import url(../Pages/Login/style.css);
+@import url(../Pages/Home/style.css);
+@import url(../Pages/MinhaConta/style.css);
+
+.slogan{
+    font-weight: 700;
+    color: var(--rosa1);
+    font-family: var(--Poppins);
+}
