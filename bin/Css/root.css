@@ -1,47 +1,49 @@
-:root{
-    --rosa1 :#F94470;
-    --text1 :#292944;
-    --text2 :#74748C;
-    --text3 :#A9A9B5;
-    --verde :#27A943;
-    --amarelo :#F89500;
-    
-    --Poppins: Poppins;
-    --Urbanist: Urbanist;
+:root {
+	--rosa1: #f94470;
+	--text1: #292944;
+	--text2: #74748c;
+	--text3: #a9a9b5;
+	--verde: #27a943;
+	--amarelo: #f89500;
+
+	--Poppins: Poppins;
+	--Urbanist: Urbanist;
 }
 
-html{
-    font-family: var(--Urbanist);
+html {
+	font-family: var(--Urbanist);
 }
 
-h1{
-    font-size: 36px;
+h1 {
+	font-size: 36px;
 }
 
-h2{
-    font-size: 32px;
+h2 {
+	font-size: 32px;
 }
 
-h3{
-    font-size: 24px;
+h3 {
+	font-size: 24px;
 }
 
-h4{
-    font-size: 20px;
+h4 {
+	font-size: 20px;
 }
 
-h5{
-    font-size: 18px;
+h5 {
+	font-size: 18px;
 }
 
-h6{
-    font-size: 14px;
+h6 {
+	font-size: 14px;
+	font-weight: 700;
 }
 
-p{
-    font-size: 16px;
+p {
+	font-size: 16px;
 }
 
-sub{
-    font-size: 12px;
+sub {
+	font-size: 12px;
+	font-weight: 600;
 }

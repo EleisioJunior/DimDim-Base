@@ -1,80 +1,187 @@
-.Home__cabecalho{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background-color: var(--rosa1);
-    padding-bottom: 20px;
-    padding-top: 2.75rem;
-    row-gap: 1rem;
-    font-weight: 700;
+.Home__cabecalho {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: var(--rosa1);
+	padding-bottom: 20px;
+	padding-top: 2.75rem;
+	row-gap: 1rem;
+	font-weight: 700;
 }
 
-.Home__precoperfil{
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 0.4fr 1fr auto;
-    box-sizing: border-box;
+.Home__precoperfil {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	grid-template-columns: 0.4fr 1fr auto;
+	box-sizing: border-box;
 }
 
-.Home__perfil{
-    grid-column: 3;
-    grid-row: span 2;
-    background-color:#00000000;
-    border: none;
-    justify-self: center;
-    align-self: flex-end;
+.Home__perfil {
+	grid-column: 3;
+	grid-row: span 2;
+	background-color: #00000000;
+	border: none;
+	justify-self: center;
+	align-self: flex-end;
 }
 
-.Home__preco{
-    display: flex;
-    flex-direction: row;
-    column-gap: 12px;
-    grid-row: 2;
-    grid-column: 1;
+.Home__preco {
+	display: flex;
+	flex-direction: row;
+	column-gap: 12px;
+	grid-row: 2;
+	grid-column: 1;
 }
 
-.Home__ocultePreco{
-    color: #00000000;
-    border-radius: 10px;
-    background-color: #ffffff66;
+.Home__ocultePreco {
+	color: #00000000;
+	border-radius: 10px;
+	background-color: #ffffff66;
+}
+.Home__ocultePreco h1 {
+	visibility: hidden;
 }
 
-.Home__ver_desver{
-    width: 20px;
-    background-color: #00000000;
-    background-image: url(../../Img/Desver.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    grid-row: 2;
-    grid-column: 2;
-    margin-left: 12px;
+.Home__ver_desver {
+	width: 20px;
+	background-color: #00000000;
+	background-image: url(../../Img/Desver.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	grid-row: 2;
+	grid-column: 2;
+	margin-left: 12px;
 }
 
-.Home__ativo{
-    background-image: url(../../Img/Ver.svg);
+.Home__ativo {
+	background-image: url(../../Img/Ver.svg);
 }
 
-.Home__espaco{
-    padding: 16px 0;
+.Home__espaco {
+	padding: 16px 0;
 }
 
-.Home__cabecalho__lista{
-    display: flex;
-    overflow-y: scroll;
-    gap: 12px;
-    padding-right:16px ;
-    padding-left: 16px;
+.Home__cabecalho__lista {
+	display: flex;
+	overflow-y: scroll;
+	gap: 12px;
+	padding-right: 16px;
+	padding-left: 16px;
 }
 
-.Home__botao{
-    min-width: 112px;
-    min-height: 112px;
-    border: none;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #ffb5bf 100%);
-    border-radius: 20px;
-    background-color: #FFDEE9;
+.Home__botao {
+	min-width: 112px;
+	min-height: 112px;
+	border: none;
+	background-image: linear-gradient(0deg, var(--rosa1) 5%, #000000 120%);
+	border-radius: 20px;
+	background-color: #ffdee9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	row-gap: 20px;
+	box-sizing: border-box;
+	padding-bottom: 1.6rem;
+}
+.Home__botao i {
+	font-size: 24px;
+}
 
+.Seta_cima::before {
+	content: url("../../Img/Vector.svg");
+	padding-right: 12px;
+}
+
+.Home__valores {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+}
+.Home__filtroPesquisa {
+	display: flex;
+	justify-content: space-between;
+}
+.Home__filtro_select {
+	border: none;
+	color: var(--rosa1);
+	font-weight: 700;
+	font-family: var(--Urbanist);
+}
+.pesquisaSvg {
+	border: none;
+	background-color: #00000000;
+}
+.pesquisaSvg:after {
+	content: url("../../Img/Pesquisa.svg");
+}
+.Home__gastos {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 3.5rem;
+}
+.Home__gastos_diarios {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+.Data_gastos {
+	color: var(--text2);
+}
+.Gastos_totais {
+	color: var(--text3);
+}
+.Hora_classificacao {
+	color: var(--text2);
+}
+
+.Home__data_home {
+	border-bottom: 1px solid #50505030;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.Home__gastos_items {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 2fr 1fr;
+	align-items: center;
+}
+
+.Home__gastos_items h6:nth-child(3) {
+	grid-column: 2;
+	grid-row: span 2;
+}
+
+.Home__gastos_items sub {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.preco_negativo {
+	color: var(--amarelo);
+	font-weight: bold;
+}
+
+.preco_positivo {
+	color: var(--verde);
+	font-weight: bold;
+}
+
+.home__footer sub {
+	width: 180px;
+	text-align: center;
+}
+.home__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 0 6rem 0;
+	row-gap: 1rem;
 }

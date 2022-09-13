@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Css/Base.css">
-    <title>Home</title>
-</head>
-<body>
-    <header class="Home__cabecalho ">
-        <div class="Home__precoperfil container">
-            <sub style="font-weight: 500;">Seu saldo é de</sub>
-            <div class="Home__preco">
-                <h1 style="font-weight: 400;">R$</h1>
-                <h1>350,00</h1>
-            </div> 
-            <button class="Home__ver_desver"></button>
-            <script src="../../Script/index.js"></script>
-            <button class="Home__perfil"><img src="../../Img/icon_perfil.png" alt=""></button>
-        </div>
-        <h6 class="Home__espaco container" style="font-weight: 600; padding-left: 16px">O que deseja cadastrar?</h6>
-        <div>
-            <ul class="Home__cabecalho__lista">
-                <li class="Home__botao"></li>
-                <li class="Home__botao"></li>
-                <li class="Home__botao"></li>
-                <li class="Home__botao"></li>
-            </ul>
-        </div>
-    </header>
-    <section>
-
-    </section>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../Css/Base.css" />
+		<script
+			src="https://kit.fontawesome.com/3d5ce785d4.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Home</title>
+	</head>
+	<body>
+		<header class="Home__cabecalho" id="inicio">
+			<div class="Home__precoperfil container">
+				<sub style="font-weight: 500">Seu saldo é de</sub>
+				<div class="Home__preco">
+					<h1 style="font-weight: 400">R$</h1>
+					<h1 name="preco">450,28</h1>
+				</div>
+				<button class="Home__ver_desver"></button>
+				<script src="../../Script/index.js"></script>
+				<button class="Home__perfil">
+					<img src="../../Img/icon_perfil.png" alt="" />
+				</button>
+			</div>
+			<h6
+				class="Home__espaco container"
+				style="font-weight: 600; padding-left: 16px"
+			>
+				O que deseja cadastrar?
+			</h6>
+			<div>
+				<ul class="Home__cabecalho__lista">
+					<li class="Home__botao">
+						<i class="fa-solid fa-hand-holding-dollar"></i>
+						<h6>Ganhos</h6>
+					</li>
+					<li class="Home__botao">
+						<i class="fa-solid fa-credit-card"></i>
+						<h6>Despesas</h6>
+					</li>
+					<li class="Home__botao">
+						<i class="fa-solid fa-calendar-days"></i>
+						<h6>Agenda</h6>
+					</li>
+					<li class="Home__botao"></li>
+				</ul>
+			</div>
+		</header>
+		<section class="Home__valores container">
+			<div class="Home__filtroPesquisa">
+				<select name="" id="" class="Home__filtro_select">
+					<option value="">Últimos 7 dias</option>
+					<option value="">Últimos 15 dias</option>
+					<option value="">Últimos 30 dias</option>
+				</select>
+				<button class="pesquisaSvg"><i></i></button>
+			</div>
+			<ul class="Home__gastos">
+				<div class="Home__gastos_diarios">
+					<li class="Home__data_home">
+						<sub class="Data_gastos w600">Hoje, 30 de Agosto</sub>
+						<sub class="Gastos_totais w600">- R$ 53,32</sub>
+					</li>
+					<li class="Home__gastos_items">
+						<h6 class="w700">Almoço delivery</h6>
+						<sub class="Hora_classificacao w500">12:11 • Comida e bebida</sub>
+						<h6 name="valor-preco">- R$ 32,90</h6>
+					</li>
+					<li class="Home__gastos_items">
+						<h6 class="w700">Antialérgico</h6>
+						<sub class="Hora_classificacao w500">11:23 • Sáude</sub>
+						<h6 name="valor-preco">- R$ 50,42</h6>
+					</li>
+					<li class="Home__gastos_items">
+						<h6 class="w700">Thiago devolveu valor do lanche</h6>
+						<sub class="Hora_classificacao w500">09:00 • Outras</sub>
+						<h6 name="valor-preco">+ R$ 30,00</h6>
+					</li>
+				</div>
+				<div class="Home__gastos_diarios">
+					<li class="Home__data_home">
+						<sub class="Data_gastos w600">29 de Agosto</sub>
+						<sub class="Gastos_totais w600">- R$ 53,32</sub>
+					</li>
+					<li class="Home__gastos_items">
+						<h6 class="w700">Almoço delivery</h6>
+						<sub class="Hora_classificacao w500">12:11 • Comida e bebida</sub>
+						<h6 name="valor-preco">- R$ 32,90</h6>
+					</li>
+					<li class="Home__gastos_items">
+						<h6 class="w700">Antialérgico</h6>
+						<sub class="Hora_classificacao w500">11:23 • Sáude</sub>
+						<h6 name="valor-preco">- R$ 50,42</h6>
+					</li>
+					<li class="Home__gastos_items">
+						<h6 class="w700">Thiago devolveu valor do lanche</h6>
+						<sub class="Hora_classificacao w500">09:00 • Outras</sub>
+						<h6 name="valor-preco">+ R$ 30,00</h6>
+					</li>
+				</div>
+			</ul>
+		</section>
+		<footer class="home__footer container">
+			<sub>Essas são todas as transações no periodo selecionado 😉</sub>
+			<a href="#inicio" class="botao botao2"
+				><i class="Seta_cima"></i> Voltar ao inicio</a
+			>
+		</footer>
+		<section></section>
+		<script src="../../Script/precos.js"></script>
+	</body>
 </html>

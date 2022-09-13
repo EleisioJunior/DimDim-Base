@@ -1,35 +1,44 @@
-.container{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.container {
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
-.botao{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 320px;
-    height: 52px;
-    border-radius: 10px;
-    justify-content: center;
-    box-sizing: border-box;
-    font-family: var(--Urbanist);
-    font-weight: 700;
+.botao {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 320px;
+	height: 52px;
+	border-radius: 10px;
+	justify-content: center;
+	box-sizing: border-box;
+	font-family: var(--Urbanist);
+	font-weight: 700;
+	text-decoration: none;
 }
-.botao1{
-    background-color: var(--rosa1);
-    color: white;
+.botao1 {
+	background-color: var(--rosa1);
+	color: white;
 }
-.botao2{
-    background-color: white;
-    color: var(--rosa1);
-    border: var(--rosa1) solid 1px;
-}
-
-.botao__google{
-    padding-left:50px ;
-    background-color: white;
-    color: var(--rosa1);
-    background-image: url(../Img/icon_google\ 1.png);
-    background-repeat: no-repeat;
-    background-position: 27% center ;
+.botao2 {
+	background-color: white;
+	color: var(--rosa1);
+	border: var(--rosa1) solid 1px;
 }
 
+.botao__google {
+	padding-left: 50px;
+	background-color: white;
+	color: var(--rosa1);
+	background-image: url(../Img/icon_google\ 1.png);
+	background-repeat: no-repeat;
+	background-position: 27% center;
+}
+.w700 {
+	font-weight: 700;
+}
+.w600 {
+	font-weight: 600;
+}
+.w500 {
+	font-weight: 500;
+}
