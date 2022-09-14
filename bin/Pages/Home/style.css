@@ -105,6 +105,7 @@
 .Home__filtroPesquisa {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .Home__filtro_select {
 	border: none;

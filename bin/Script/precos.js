@@ -15,7 +15,7 @@ function onchangedo() {
 		let label = document.querySelector(`label[for="${element.id}"]`);
 		if (element.checked) {
 			label.style.fontWeight = "bold";
-			document.getElementById("menutext").innerText = label.textContent;
+			document.getElementById("menutext").innerText = label.textContent.trim();
 		} else {
 			label.style.fontWeight = "200";
 		}
