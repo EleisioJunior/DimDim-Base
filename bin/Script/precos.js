@@ -21,3 +21,9 @@ function onchangedo() {
 	});
 }
 onchangedo();
+function sumir() {
+	document.getElementById("sumir").style.display = "none";
+}
+function aparece() {
+	document.getElementById("sumir").style.display = "flex";
+}

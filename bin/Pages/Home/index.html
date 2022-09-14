@@ -52,12 +52,14 @@
 		<section class="Home__valores">
 			<div class="Home__filtroPesquisa">
 				<select name="" id="" class="Home__filtro_select"></select>
-				<button class="pesquisaSvg"><i></i></button>
+				<button class="pesquisaSvg" onclick="aparece()"><i></i></button>
 			</div>
-			<div class="Filtro_offcanvas">
+			<div class="Filtro_offcanvas" id="sumir">
 				<div class="Filtro_offcanvas_flex">
 					<div class="div__close-button">
-						<button class="close-button"><span class="close">+</span></button>
+						<button class="close-button" onclick="sumir()">
+							<span class="close">+</span>
+						</button>
 					</div>
 					<div class="text-start">
 						<h3>Selecione um periodo</h3>
@@ -125,7 +127,14 @@
 							</label>
 						</div>
 					</div>
-					<button class="botao botao1" style="margin-top: 20px">Filtrar</button>
+					<button
+						type="button"
+						class="botao botao1"
+						onclick="sumir()"
+						style="margin-top: 20px"
+					>
+						Filtrar
+					</button>
 				</div>
 			</div>
 			<ul class="Home__gastos">
